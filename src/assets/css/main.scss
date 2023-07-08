@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+@font-face {
+  font-family: "Ego";
+  src: url("../fonts/Ego-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Ego Outline";
+  src: url("../fonts/Ego-Outline.woff2");
+}
+
+@font-face {
+  font-family: "Arial Rounded";
+  src: url("../fonts/Arial-Rounded.woff2");
+}
+
+@font-face {
+  font-family: "Associate Sans";
+  src: url("../fonts/AssociateSans-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Concord W00 Regular";
+  src: url("../fonts/Concord-W00-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Factor A";
+  src: url("../fonts/FactorAMedium-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Gina";
+  src: url("../fonts/Gina-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Nord";
+  src: url("../fonts/Nord-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Outfit Extra Bold";
+  src: url("../fonts/Outfit-ExtraBold.woff2");
+}
+
+@font-face {
+  font-family: "PF Centro Sans Pro";
+  src: url("../fonts/PFCentroSansPro-Black.woff2");
+}
+
+@font-face {
+  font-family: "Chillax";
+  src: url("../fonts/Chillax-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("../fonts/ClashDisplay-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Technor";
+  src: url("../fonts/Technor-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Pally";
+  src: url("../fonts/Pally-Medium.woff2");
+}
+
+// ----------------------------------------------------------------
+
+:root {
+  --font-ego: "Ego";
+  --font-ego-outline: "Ego Outline";
+  --font-arial-rounded: "Arial Rounded";
+  --font-poppins: "Poppins";
+  --font-inter: "Inter";
+  --font-associate: "Associate Sans";
+  --font-concord: "Concord W00 Regular";
+  --font-nord: "Nord";
+  --font-outfit: "Outfit";
+  --font-outfit-bold: "Outfit Extra Bold";
+  --font-centro: "PF Centro Sans Pro";
+  --font-chillax: "Chillax";
+  --font-clash-display: "Clash Display";
+  --font-technor: "Technor";
+  --font-author: "Author";
+  --font-pally: "Pally";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #263238;
+  border: 3px solid #fff;
+}
+
+#root {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.menu-container{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  ul{
+    li{
+      color: gray;
+      cursor: pointer;
+    }
+    li.active{
+      color: black;
+      font-weight: 900;
+    }
+  }
+  .categories{
+    height: 250px;
+    overflow: auto;
+  }
+  p{
+    margin: 0;
+  }
+  button{
+    width: 150px;
+  }
+}
+
+.products-container{
+  padding: 0 20px;
+  height: 83vh;
+  overflow: auto;
+  
+  .product-nav{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
+    .line{
+      width: 500px;
+      border: gray 1px solid;
+    }
+  }
+  .products{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 240px;
+    gap: 25px;
+    .product{
+      width: 100%;
+      .product-img{
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .product-text{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        span{
+          color: gray;
+        }
+      }
+    }
+  }
+}
